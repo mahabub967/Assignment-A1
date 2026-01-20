@@ -9,8 +9,8 @@
 
 /* NAV */
 .header .container{
-  height: 92px;          /* fixed height */
-  width: 92%;            /* zoom in/out safe */
+  height: 92px;         
+  width: 92%;         
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -63,22 +63,22 @@
 /* HERO SECTION */
 .hero {
     position: relative;
-    min-height: 674px;           /* height চাইলে adjust করতে পারো */
-    width: 100%;                 /* full width */
+    min-height: 674px;      
+    width: 100%;           
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    overflow: hidden;            /* কোন extra scroll না হোক */
+    overflow: hidden;   
 }
 
 /* HERO BACKGROUND */
 .hero::before {
     content: "";
     position: absolute;
-    inset: 0;                      /* top:0; right:0; bottom:0; left:0 */
+    inset: 0;     
     background-image: url("hero-bg.png");
-    background-size: cover;        /* পুরো space-cover হবে */
+    background-size: cover;  
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
@@ -142,9 +142,9 @@
     cursor: pointer;
     display: inline-flex;
     align-items: center;
-    gap: 8px;          /* icon + text gap */
+    gap: 8px;        
     justify-content: center;
-    transition: all 0.3s ease;   /* hover effect smooth করার জন্য */
+    transition: all 0.3s ease;  
     font-weight: 500;
 }
 
@@ -161,14 +161,14 @@
 .btn-secondary {
     width: 210px;
     height: 52px;
-    background-color: transparent;   /* ব্যাকগ্রাউন্ড স্বচ্ছ */
-    color: white;                    /* লেখা সাদা */
-    border: 2px solid white;         /* চিকন সাদা বর্ডার */
-    border-radius: 10px;             /* primary এর মতো রাউন্ড shape */
+    background-color: transparent; 
+    color: white;           
+    border: 2px solid white;  
+    border-radius: 10px;   
 }
 
 .btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* hover এ হালকা background */
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 
@@ -178,7 +178,7 @@
 /* ABOUT SECTION */
 #about {
     padding: 100px 0;
-    background-color: #f7f7f7; /* light background */
+    background-color: #f7f7f7; 
     text-align: center;
 }
 
@@ -201,9 +201,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 0 20px; /* left-right space */
-    max-width: 1200px; /* container max width */
-    margin: 0 auto; /* center হবে */
+    padding: 0 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 
@@ -212,7 +212,7 @@
     background-color: white;
     padding: 30px 20px;
     border-radius: 15px;
-    flex: 1 1 calc(25% - 20px); /* 4 columns */
+    flex: 1 1 calc(25% - 20px); 
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -261,9 +261,8 @@
     background-color: #fff;
     padding: 20px;
     border-radius: 15px;
-    /* box-shadow: 0 4px 15px rgba(0,0,0,0.1); */
     gap: 20px;
-    flex-wrap: wrap; /* responsive */
+    flex-wrap: wrap; 
 }
 
 /* Left Image */
@@ -318,11 +317,11 @@
 
 .tick-item {
     font-size: 1rem;
-    font-weight: 600; /* h4 এর মতো bold */
+    font-weight: 600; 
     color: #333;
     display: flex;
     align-items: center;
-    gap: 8px; /* tick icon এবং text এর মাঝে space */
+    gap: 8px; 
     margin-bottom: 10px;
 }
 
@@ -348,7 +347,7 @@
     padding: 40px 30px;
     border-radius: 20px;
     text-align: center;
-    max-width: 1200px; /* same size box */
+    max-width: 1200px;
     width: 100%;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     margin: 0 auto;
@@ -383,7 +382,7 @@
 }
 
 .access-btn:hover {
-    background-color: #30B868; /* slightly darker green on hover */
+    background-color: #30B868; 
 }
 
 .access-box .note {
@@ -394,15 +393,14 @@
 
 /* ---------------------------------- */
 .footer {
-    /* margin-top: 80px; */
-    background: #000000; /* purple */
+    background: #000000; 
     width: 100%;
     height: 348px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 95px;
 }
 
 .footer-box {
