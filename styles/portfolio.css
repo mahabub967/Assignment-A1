@@ -329,10 +329,12 @@
 
 /* -------------------------------- */
 
-#early-access {
+.early-access {
     padding: 50px 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
+   
 }
 
 .access-box {
@@ -343,6 +345,7 @@
     max-width: 1200px; /* same size box */
     width: 100%;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 0 auto;
 }
 
 .access-box h2 {
