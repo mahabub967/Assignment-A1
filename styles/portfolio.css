@@ -39,6 +39,8 @@
 
 /* BUTTON */
 .my-btn{
+  width: 164px;
+  height: 44px;
   background-color: #30B868;
   color: #fff;
   padding: 10px 20px;
@@ -148,6 +150,8 @@
 
 /* PRIMARY BUTTON */
 .btn-primary {
+    width: 251px;
+    height: 52px;
     background-color: #30B868;
     color: white;
     border: none;
@@ -155,6 +159,8 @@
 
 /* SECONDARY BUTTON */
 .btn-secondary {
+    width: 210px;
+    height: 52px;
     background-color: transparent;   /* ব্যাকগ্রাউন্ড স্বচ্ছ */
     color: white;                    /* লেখা সাদা */
     border: 2px solid white;         /* চিকন সাদা বর্ডার */
@@ -301,7 +307,7 @@
 }
 
 .tick-list span {
-    color: green;
+    color: #30B868;
     font-weight: bold;
     margin-right: 8px;
 }
@@ -362,7 +368,7 @@
 }
 
 .access-btn {
-    background-color: green;
+    background-color: #30B868;
     color: white;
     font-size: 1rem;
     padding: 12px 25px;
@@ -371,13 +377,13 @@
     cursor: pointer;
     display: inline-flex;
     align-items: center;
-    gap: 8px; /* arrow এর সাথে space */
+    gap: 8px; 
     margin-bottom: 15px;
     transition: background-color 0.3s ease;
 }
 
 .access-btn:hover {
-    background-color: #0b8a2f; /* slightly darker green on hover */
+    background-color: #30B868; /* slightly darker green on hover */
 }
 
 .access-box .note {
@@ -388,6 +394,7 @@
 
 /* ---------------------------------- */
 .footer {
+    /* margin-top: 80px; */
     background: #000000; /* purple */
     width: 100%;
     height: 348px;
@@ -395,6 +402,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 100px;
 }
 
 .footer-box {
