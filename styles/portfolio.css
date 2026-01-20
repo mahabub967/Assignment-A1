@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* HEADER */
+.header{
+  width: 100%;
+}
+
+/* NAV */
+.header .container{
+  height: 92px;          /* fixed height */
+  width: 92%;            /* zoom in/out safe */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo img{
+  height: 40px;
+}
+
+/* MENU */
+.link-parent{
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-parent a{
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* BUTTON */
+.my-btn{
+  background-color: #30B868;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+/* ------------------------------------------ */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    min-height: 674px;           /* height চাইলে adjust করতে পারো */
+    width: 100%;                 /* full width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;            /* কোন extra scroll না হোক */
+}
+
+/* HERO BACKGROUND */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;                      /* top:0; right:0; bottom:0; left:0 */
+    background-image: url("hero-bg.png");
+    background-size: cover;        /* পুরো space-cover হবে */
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/* HERO CONTENT */
+.hero-content {
+    position: relative;
+    max-width: 900px;
+    padding: 20px;
+    color: white;
+}
+
+/* BADGE */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.9);
+    color: black;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.badge .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #30B868;
+    border-radius: 50%;
+}
+
+/* HEADING */
+.hero-content h1 {
+    font-size: 56px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* PARAGRAPH */
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 40px;
+}
+/* BUTTONS CONTAINER */
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* COMMON BUTTON STYLE */
+.hero-buttons button {
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;          /* icon + text gap */
+    justify-content: center;
+    transition: all 0.3s ease;   /* hover effect smooth করার জন্য */
+    font-weight: 500;
+}
+
+/* PRIMARY BUTTON */
+.btn-primary {
+    background-color: #30B868;
+    color: white;
+    border: none;
+}
+
+/* SECONDARY BUTTON */
+.btn-secondary {
+    background-color: transparent;   /* ব্যাকগ্রাউন্ড স্বচ্ছ */
+    color: white;                    /* লেখা সাদা */
+    border: 2px solid white;         /* চিকন সাদা বর্ডার */
+    border-radius: 10px;             /* primary এর মতো রাউন্ড shape */
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* hover এ হালকা background */
+}
+
+
+/* ----------------------------------------- */
+
+
+/* ABOUT SECTION */
+#about {
+    padding: 100px 0;
+    background-color: #f7f7f7; /* light background */
+    text-align: center;
+}
+
+.selection-heading h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.selection-heading p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    line-height: 1.6;
+}
+
+/* INFO CARDS CONTAINER */
+.about-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px; /* left-right space */
+    max-width: 1200px; /* container max width */
+    margin: 0 auto; /* center হবে */
+}
+
+
+/* INDIVIDUAL INFO CARD */
+.info-card {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    flex: 1 1 calc(25% - 20px); /* 4 columns */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* ICON ABOVE H3 */
+.info-card img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* CARD TITLE */
+.info-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* CARD DESCRIPTION */
+.info-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* ------------------------------------ */
+
+
+#feature-box {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    /* box-shadow: 0 4px 15px rgba(0,0,0,0.1); */
+    gap: 20px;
+    flex-wrap: wrap; /* responsive */
+}
+
+/* Left Image */
+.feature-img img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Right Content */
+.feature-content {
+    flex: 1;
+    text-align: left;
+    padding-top: 60px;
+}
+
+.feature-content .small-text {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.feature-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Tick List */
+.tick-list p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.tick-list span {
+    color: green;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.tick-list {
+    margin-top: 15px;
+}
+
+.tick-item {
+    font-size: 1rem;
+    font-weight: 600; /* h4 এর মতো bold */
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* tick icon এবং text এর মাঝে space */
+    margin-bottom: 10px;
+}
+
+.tick-item img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
